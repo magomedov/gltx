@@ -41,19 +41,6 @@ namespace Galytix.Compute
             }
 
             return result;
-
-            //decimal avg = 0;
-            //var count = 0;
-            //for (int year = yearRange.From; year <= yearRange.To; year++)
-            //{
-            //    if (!record.ValuesPerYear.ContainsKey(year))
-            //        continue;
-
-            //    avg += record.ValuesPerYear[year];
-            //    count++;
-            //}
-
-            //return count == 0 ? 0 : avg / count;
         }
     }
 }
