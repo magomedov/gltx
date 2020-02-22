@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galytix.Web.Api", "Galytix.Web.Api\Galytix.Web.Api.csproj", "{A667BAD0-BBBF-4545-9708-4BFAB1D638C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galytix.Data", "Galytix.Data\Galytix.Data.csproj", "{D209295D-9C59-4BCC-B3EA-627FED02B6A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A667BAD0-BBBF-4545-9708-4BFAB1D638C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A667BAD0-BBBF-4545-9708-4BFAB1D638C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A667BAD0-BBBF-4545-9708-4BFAB1D638C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A667BAD0-BBBF-4545-9708-4BFAB1D638C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D209295D-9C59-4BCC-B3EA-627FED02B6A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D209295D-9C59-4BCC-B3EA-627FED02B6A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D209295D-9C59-4BCC-B3EA-627FED02B6A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D209295D-9C59-4BCC-B3EA-627FED02B6A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EBAB63CD-64B3-4E7D-A724-3501838441C3}
+	EndGlobalSection
+EndGlobal
