@@ -21,11 +21,6 @@ namespace Galytix.Web.Api
             var config = new HttpConfiguration();
             config.Formatters.Clear();
             config.Formatters.Add(new JsonMediaTypeFormatter());
-            //config.Routes.MapHttpRoute(
-            //    name: "DefaultApi",
-            //    routeTemplate: "server/api/{controller}/{id}",
-            //    defaults: new { id = RouteParameter.Optional }
-            //);
             
             SwaggerConfig.Register(config);
 
