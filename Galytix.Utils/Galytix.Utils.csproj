@@ -1,14 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F15DE0A1-810F-4194-B8F0-8A2EDFA5793F}</ProjectGuid>
+    <ProjectGuid>16171030-ffca-4216-8122-488cd90c038d</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Galytix.Services</RootNamespace>
-    <AssemblyName>Galytix.Services</AssemblyName>
+    <RootNamespace>Galytix.Utils</RootNamespace>
+    <AssemblyName>Galytix.Utils</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,38 +31,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
+    <Reference Include="System"/>
+    
+    <Reference Include="System.Core"/>
+    <Reference Include="System.Xml.Linq"/>
+    <Reference Include="System.Data.DataSetExtensions"/>
+    
+    
+    <Reference Include="Microsoft.CSharp"/>
+    
+    <Reference Include="System.Data"/>
+    
+    <Reference Include="System.Net.Http"/>
+    
+    <Reference Include="System.Xml"/>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GwpService.cs" />
-    <Compile Include="Interfaces\IGwpService.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <ProjectReference Include="..\Galytix.Compute\Galytix.Compute.csproj">
-      <Project>{C2270EC3-901E-4A1A-8016-A183EFE61D26}</Project>
-      <Name>Galytix.Compute</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Galytix.Data.Models\Galytix.Data.Models.csproj">
-      <Project>{B817B7B4-005F-4C20-87AA-A733B06A7BDA}</Project>
-      <Name>Galytix.Data.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Galytix.Data\Galytix.Data.csproj">
-      <Project>{D209295D-9C59-4BCC-B3EA-627FED02B6A0}</Project>
-      <Name>Galytix.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Galytix.Extensions\Galytix.Extensions.csproj">
-      <Project>{35D1239A-B8E2-4840-A5BC-7A293184F2D8}</Project>
-      <Name>Galytix.Extensions</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-</Project>
+ </Project>

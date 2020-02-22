@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F15DE0A1-810F-4194-B8F0-8A2EDFA5793F}</ProjectGuid>
+    <ProjectGuid>{C2270EC3-901E-4A1A-8016-A183EFE61D26}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Galytix.Services</RootNamespace>
-    <AssemblyName>Galytix.Services</AssemblyName>
+    <RootNamespace>Galytix.Compute</RootNamespace>
+    <AssemblyName>Galytix.Compute</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,27 +41,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GwpService.cs" />
-    <Compile Include="Interfaces\IGwpService.cs" />
+    <Compile Include="GrowthRate.cs" />
+    <Compile Include="GrowthRateCalculator.cs" />
+    <Compile Include="ComputationalParametersConfigProvider.cs" />
+    <Compile Include="DefaultParametersConfigProvider.cs" />
+    <Compile Include="Interfaces\IGrowthRateCalculator.cs" />
+    <Compile Include="ComputationalParameters.cs" />
+    <Compile Include="Interfaces\IRange.cs" />
+    <Compile Include="Interfaces\IComputationalParametersProvider.cs" />
+    <Compile Include="Peer.cs" />
+    <Compile Include="Range.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\Galytix.Compute\Galytix.Compute.csproj">
-      <Project>{C2270EC3-901E-4A1A-8016-A183EFE61D26}</Project>
-      <Name>Galytix.Compute</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Galytix.Data.Models\Galytix.Data.Models.csproj">
       <Project>{B817B7B4-005F-4C20-87AA-A733B06A7BDA}</Project>
       <Name>Galytix.Data.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Galytix.Data\Galytix.Data.csproj">
-      <Project>{D209295D-9C59-4BCC-B3EA-627FED02B6A0}</Project>
-      <Name>Galytix.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Galytix.Extensions\Galytix.Extensions.csproj">
-      <Project>{35D1239A-B8E2-4840-A5BC-7A293184F2D8}</Project>
-      <Name>Galytix.Extensions</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

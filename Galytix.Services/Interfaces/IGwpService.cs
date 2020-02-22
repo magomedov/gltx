@@ -1,7 +1,11 @@
-﻿namespace Galytix.Services.Interfaces
+﻿using System.Collections.Generic;
+using Galytix.Compute;
+using Galytix.Data.Models;
+
+namespace Galytix.Services.Interfaces
 {
     public interface IGwpService
     {
-        string DoSomething();
+        List<Peer> GetPeers(string countryCode, string lineOfBusiness, int numberOfPeers);
     }
 }

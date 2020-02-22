@@ -86,6 +86,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Galytix.Compute\Galytix.Compute.csproj">
+      <Project>{C2270EC3-901E-4A1A-8016-A183EFE61D26}</Project>
+      <Name>Galytix.Compute</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Galytix.Data\Galytix.Data.csproj">
       <Project>{D209295D-9C59-4BCC-B3EA-627FED02B6A0}</Project>
       <Name>Galytix.Data</Name>

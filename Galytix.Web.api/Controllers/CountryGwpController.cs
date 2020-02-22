@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Web.Http;
+﻿using System.Web.Http;
 using Galytix.Services.Interfaces;
 
 namespace galytix.web.api.Controllers
@@ -16,10 +15,10 @@ namespace galytix.web.api.Controllers
 
         [Route("peers")]
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IHttpActionResult Peers(string country, string lineOfBusiness, int numberOfPeers)
         {
-            var jopa = _gwpService.DoSomething();
-            return new List<string> { "xxx", "yyy", "zzz", jopa };
+            var result = _gwpService.GetPeers(country, lineOfBusiness, numberOfPeers);
+            return Ok(result);
         }
     }
 }
